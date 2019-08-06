@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>com.liyong.demo</groupId>
+    <artifactId>jdk8_feature</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>jdk8_feature</name>
+    <packaging>pom</packaging>
+    <description>This Project is prepare to learn the jdk8 feature</description>
+
+    <modules>
+        <module>01Introduction</module>
+        <module>02ForEach</module>
+        <module>03Stream</module>
+        <module>04Boxed_Stream</module>
+        <module>05LambdaExpression</module>
+        <module>06Function_Interface</module>
+        <module>07Method_References</module>
+        <module>08Default_Method</module>
+        <module>09Optionals</module>
+        <module>10Predicate</module>
+        <module>11Date_Time</module>
+        <module>12Iterate_Directory</module>
+        <module>13Write_2_File</module>
+        <module>14WatchService</module>
+        <module>15String_2_Date</module>
+        <module>16Join_Array</module>
+        <module>17Base64</module>
+        <module>18Exact_Arithmetic</module>
+        <module>19Comparator</module>
+        <module>20Regex_as_Predicate</module>
+        <module>21Join_String</module>
+        <module>22Different_Between_Dates</module>
+        <module>23SecureRandom</module>
+    </modules>
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
