@@ -68,4 +68,33 @@ public interface MyFirstFunctionalInterface
 通常能想到的解决办法是在JDK里给相关的接口添加新的方法及实现。
 然而，对于已经发布的版本，是没法在给接口添加新方法的同时不影响已有的实现。
 所以引进的默认方法。他们的目的是为了解决接口的修改与现有的实现不兼容的问题。
+
+默认方法实例:
+public interface Moveable {
+    default void move(){
+        System.out.println("I am moving");
+    }
+}
+
+public class Animal implements Moveable{
+    public static void main(String[] args){
+        Animal tiger = new Animal();
+        tiger.move();
+    }
+}
+```
+
+## 4 Java 8 Streams
+
+```
+另一个重大变化是Java 8 Streams API，它提供了一种以各种方式处理一组数据的机制，
+包括过滤，转换或任何其他可能对应用程序有用的方式。
+
+Java 8中的Streams API支持不同类型的迭代，您只需定义要处理的项集，
+要对每个项执行的操作以及要存储这些操作的输出。
+
+下例是删除集合中以某种字符开头的字符串
+List<String> items;
+String prefix;
+List<String> filteredList = items.stream().filter(e -> (!e.startsWith(prefix))).collect(Collectors.toList());
 ```
